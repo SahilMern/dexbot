@@ -1,0 +1,136 @@
+/* page.module.css */
+
+.homeContainer {
+  /* border: 1px solid rgb(255, 70, 70); */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.homeContainer h1 {
+  color: white;
+  font-size: 4rem;
+}
+
+.homeContainer p {
+  text-align: center;
+  width: 50%;
+  color: white;
+  line-height: 1.5rem;
+}
+
+.buttonGroup {
+  margin-top: 20px;
+}
+
+.buttonDashboard {
+  background-color: #7027EB;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  width: 12rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.buttonLogin {
+  background-color: #052fff;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  width: 12rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+
+.buttonDashboard:hover {
+  background-color: #39009b;
+}
+.buttonLogin:hover {
+  background-color: rgb(17, 97, 255);
+}
+@media only screen and (max-width: 1200px) {
+  .homeContainer{
+    /* border: 1px solid #ff055d; */
+    margin-top: 3rem; 
+    padding: 1rem;
+  }
+  .homeContainer h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /* .homeContainer{
+    border: 1px solid royalblue;
+  } */
+ .homeContainer h1 {
+    font-size: 2.8rem;
+    text-align: center;
+  } 
+
+  .homeContainer p {
+    width: 70%;
+    line-height: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* .homeContainer{
+    border: 1px solid rgb(102, 225, 65);
+  } */
+
+  .homeContainer h1 {
+    font-size: 2.3rem;
+  }
+
+  .homeContainer p {
+    width: 70%;
+    line-height: 1.4rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* .homeContainer{
+    border: 1px solid rgb(65, 204, 225);
+  } */
+
+  .homeContainer h1 {
+    font-size: 2rem;
+  }
+
+  .homeContainer p {
+    width: 80%;
+    line-height: 1.3rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /* .homeContainer{
+    border: 1px solid rgb(225, 65, 185);
+  } */
+
+  .homeContainer h1 {
+    font-size: 1.5rem;
+  }
+  .homeContainer p {
+    width: 90%;
+    line-height: 1.3rem;
+    /* font-size: 1rem; */
+  }
+
+  .buttonDashboard, .buttonLogin {
+    width: 8rem;
+    padding: 0.5rem;
+  }
+}

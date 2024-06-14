@@ -1,0 +1,63 @@
+.container{
+    /* border: 1px solid gray; */
+    margin-top: 2rem;
+    min-height: 80vh;
+    padding: 1rem;
+}
+.button{
+    padding: 0.5rem;
+    border: none;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    float: right;
+  }
+
+.seenAll{
+    background-color: rgb(15, 255, 179);
+    color: white;
+}
+  
+.deleteAll{
+    background-color: rgb(255, 31, 31);
+    color: white;
+}
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 15px;
+    background-color: var(--bgSoft);
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    text-align: left;
+    color: black;
+
+  }
+  
+
+  .buy {
+    background-color: red;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: max-content;
+    color: white;
+  }
+  
+  .sell {
+    background-color: green;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: max-content;
+    color: white;
+  }
+
+ 

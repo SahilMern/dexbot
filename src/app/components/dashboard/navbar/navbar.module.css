@@ -1,0 +1,123 @@
+.container {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--bgSoft);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: var(--textSoft);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #2e374a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  color: var(--text);
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.notificationDiv {
+  position: relative;
+  cursor: pointer;
+}
+
+.notificationDiv span {
+  color: rgb(255, 252, 252);
+  background-color: rgb(80, 106, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: -60%;
+  left: 60%;
+  padding: 0.1rem;
+  width: 1.2rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+
+.navbarImage{
+  display: none;
+}
+.responsiveIcon {
+  font-size: 1.2rem;
+  display: none;
+}
+
+.notificationMainIcon {
+  font-size: 1.2rem;
+}
+
+
+.sidebarOverlay{
+  /* border: 1px solid seagreen; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-color: var(--bgSoft);
+  z-index: 1000;
+  padding: 2rem;
+  display: none;
+}
+
+@media only screen and (max-width: 992px) { 
+  .navbarImage{
+    display: block;
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .responsiveIcon {
+    display: block;
+    font-size: 1rem;
+  }
+  .sidebarOverlay{
+    display: block;
+
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebarOverlay {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .sidebarOverlay {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .sidebarOverlay {
+    width: 70%;
+  }
+}

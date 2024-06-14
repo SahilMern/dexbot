@@ -1,0 +1,87 @@
+.container{
+    display: flex;
+}
+.menu{
+    width: 20%;
+    background-color: var(--bgSoft);
+    padding: 20px;
+}
+.content{
+    width: 80%;
+    padding: 20px;
+}
+
+
+.DashBoardBody{
+    min-height: 90vh;
+}
+
+.dashboardContainer{
+    /* border: 1px solid salmon; */
+    min-height: 80vh;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.dashboardContainer h1{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.dashboardContainer p{
+    font-size: 1rem;
+    text-align: center;
+    width: 50%;
+}
+
+.dashboardContainer button{
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: blueviolet;
+    color: white;
+    width: 10rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .dashboardContainer h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .menu {
+       display: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .dashboardContainer p{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .dashboardContainer h1{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .dashboardContainer h1{
+        font-size: 1.5rem;
+    }
+
+    .dashboardContainer p{
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+}

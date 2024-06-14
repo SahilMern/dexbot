@@ -1,0 +1,111 @@
+.dexbotcontainer{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    margin-top: 4rem;
+}
+.dexbotCard{
+    padding: 0.3rem;
+    height: 28rem;
+    width: 18rem;
+    /* width: 27%; */
+    
+    background-color: var(--bgSoft);
+    border-radius: 0.5rem;
+}
+
+.dexbotCard img{
+    width: 100%;
+    height: 50%;
+    border-radius: 0.5rem;
+    object-fit:cover;
+}
+
+.dexbotCard .content{
+    padding: 2rem 0.5rem;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--textSoft);
+    height: 50%;
+}
+
+.dexbotCard .content p {
+    line-height: 1.3rem;
+}
+
+.buttonGroup{
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.cardbuttons{
+    width: 50%;
+    padding: 0.8rem;
+    border-radius: 0.2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.startButton{
+    background-color: #008F75;
+    color: white;
+}
+
+.stopButton{
+    background-color: #D64D4D;
+    color: white;
+}
+
+.startButton:disabled {
+    background-color: #00b38687;
+    cursor: not-allowed;
+  }
+  .stopButton:disabled {
+    background-color: hsl(0deg 100% 50.47% / 48%);
+    cursor: not-allowed;
+  }
+
+  @media only screen and (max-width: 992px) {
+    /* .dexbotcontainer{
+        border: 1px solid #008F75;
+    } */
+    .dexbotCard{
+        width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* .dexbotcontainer{
+        border: 1px solid #8f0000;
+    } */
+    .dexbotCard{
+        width: 60%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    /* .dexbotcontainer{
+        border: 1px solid #7a8f00;
+    } */
+    .dexbotCard{
+        width: 80%;
+    }
+  }
+
+
+  @media only screen and (max-width: 450px) {
+    .dexbotcontainer{
+        /* border: 1px solid #7a8f00; */
+        padding: 0rem;
+    }
+    .dexbotCard{
+        width: 90%;
+    }
+  }

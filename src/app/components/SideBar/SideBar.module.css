@@ -1,0 +1,95 @@
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--bgSoft);
+}
+
+.userDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.userName {
+    font-weight: bold;
+}
+
+.userTitle {
+    font-size: 0.8rem;
+    color: var(--textSoft);
+}
+
+.list {
+    margin-bottom: 5rem;
+    /* border: 1px solid red; */
+    margin-top: 2.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.cat {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    background-color: #f44336; /* Red color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+
+.closeIcon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+
+.border{
+    /* border: 1px solid rgb(111, 111, 255); */
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width: 992px) {
+    .closeIcon {
+    display: block;
+    font-size: 1.2rem;
+    border: 1px solid saddlebrown;
+    background-color: #eee;
+    color: black;
+    border-radius: 0.1rem;
+    }
+
+    .userImage{
+        height: 2rem;
+        width: 2rem;
+    }
+    .userName{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .user{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+}
