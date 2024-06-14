@@ -1,4 +1,4 @@
-const serverPath = "http://localhost:2222/api";
-const serverSocket= "http://localhost:2222";
+const serverPath = "https://uniswap.decentrawood.com/";
+const serverSocket= "https://uniswap.decentrawood.com/";
 
 export {serverPath,serverSocket }
